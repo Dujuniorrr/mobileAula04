@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SubActivity"   android:background="#161a23">
+
+
+    <TextView
+        android:id="@+id/mainTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Operação de Subtração"
+        android:layout_centerHorizontal="true"
+        android:textColor="#161a23"
+        android:background="#53b369"
+        android:paddingVertical="10dp"
+        android:textAlignment="center"
+        android:textStyle="bold"
+        android:textSize="23dp"
+
+        />
+
+    <EditText
+        android:id="@+id/editTextNumber1"
+        android:layout_below="@id/mainTitle"
+        android:hint="Primeiro número"
+        style="@style/textEditNumber" />
+
+    <TextView
+        android:id="@+id/operation"
+        android:textColor="#53b369"
+        android:layout_below="@+id/editTextNumber1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="-"
+        android:textSize="40dp"
+        android:layout_centerHorizontal="true"
+        ></TextView>
+
+    <EditText
+        android:id="@+id/editTextNumber2"
+        android:layout_below="@id/operation"
+        android:hint="Segundo número"
+        style="@style/textEditNumber" />
+
+    <TextView
+        android:id="@+id/resultSymbol"
+        android:textColor="#53b369"
+        android:layout_below="@+id/editTextNumber2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="="
+        android:textSize="40dp"
+        android:layout_centerHorizontal="true"
+        ></TextView>
+
+    <EditText
+        android:id="@+id/resultTextEdit"
+        style="@style/textEditNumber"
+        android:layout_below="@id/resultSymbol"
+        android:editable="false"
+        android:text="Resultado" />
+
+</RelativeLayout>
